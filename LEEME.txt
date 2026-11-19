@@ -7,9 +7,8 @@ Contenido de esta carpeta
 - sobre-mi.html ........... Sobre mí
 - resenas.html ............ Reseñas (con estadísticas)
 - legal.html .............. Términos, privacidad y reembolsos
-- img/ .................... Logo, foto e imágenes
-
-No cambies los nombres de los archivos ni de la carpeta img.
+El logo, la foto y las imágenes ya van dentro de cada página.
+No cambies los nombres de los archivos.
 
 
 SUBIR LA WEB A GITHUB (la primera vez)
@@ -20,7 +19,7 @@ SUBIR LA WEB A GITHUB (la primera vez)
    - Márcalo como "Public"
    - Pulsa "Create repository".
 3. En la página que aparece, pulsa el enlace "uploading an existing file".
-4. Arrastra TODO el contenido de esta carpeta (los .html y la carpeta img).
+4. Arrastra los 5 archivos .html.
 5. Abajo pulsa "Commit changes".
 6. Ve a "Settings" > "Pages".
    - En "Branch" elige "main" y "/ (root)" y pulsa "Save".
