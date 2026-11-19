@@ -1,0 +1,47 @@
+LANCISSE - PÁGINA WEB
+=====================
+
+Contenido de esta carpeta
+- index.html .............. Página principal (servicios, requisitos, proceso, preguntas)
+- que-es-upwork.html ...... ¿Qué es Upwork?
+- sobre-mi.html ........... Sobre mí
+- resenas.html ............ Reseñas (con estadísticas)
+- legal.html .............. Términos, privacidad y reembolsos
+- img/ .................... Logo, foto e imágenes
+
+No cambies los nombres de los archivos ni de la carpeta img.
+
+
+SUBIR LA WEB A GITHUB (la primera vez)
+--------------------------------------
+1. Entra a github.com y crea una cuenta (gratis).
+2. Arriba a la derecha pulsa "+" > "New repository".
+   - Nombre: lancisse (o el que quieras)
+   - Márcalo como "Public"
+   - Pulsa "Create repository".
+3. En la página que aparece, pulsa el enlace "uploading an existing file".
+4. Arrastra TODO el contenido de esta carpeta (los .html y la carpeta img).
+5. Abajo pulsa "Commit changes".
+6. Ve a "Settings" > "Pages".
+   - En "Branch" elige "main" y "/ (root)" y pulsa "Save".
+7. Espera 1 o 2 minutos. Arriba aparecerá el enlace de tu web
+   (algo como https://tu-usuario.github.io/lancisse/).
+
+
+CONECTAR TU DOMINIO
+-------------------
+1. En GitHub: "Settings" > "Pages" > "Custom domain", escribe tu dominio
+   (por ejemplo www.lancisse.com) y pulsa "Save".
+2. En la página donde compraste el dominio, entra a la configuración DNS
+   y agrega lo que GitHub te indique (un registro CNAME para "www").
+3. Vuelve a GitHub y marca "Enforce HTTPS" cuando esté disponible.
+Puede tardar algunas horas en funcionar. Si te trabas, pídele ayuda a Claude
+con una captura de la pantalla.
+
+
+ACTUALIZAR LA WEB (por ejemplo, cuando haya reseñas nuevas)
+----------------------------------------------------------
+1. Pídele a Claude el cambio y descarga los archivos nuevos.
+2. En tu repositorio de GitHub pulsa "Add file" > "Upload files".
+3. Arrastra los archivos nuevos (se reemplazan los viejos).
+4. Pulsa "Commit changes". En 1 o 2 minutos la web se actualiza sola.
