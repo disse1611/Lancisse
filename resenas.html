@@ -159,7 +159,23 @@ var RESENAS = [
       st.setAttribute('aria-label', r.rating + ' de 5 estrellas');
       fig.appendChild(st);
     }
-    fig.appendChild(el('blockquote', 'margin: 0; font-size: 15px; line-height: 1.7; color: #1E2B47; white-space: pre-line', r.rest[0]));
+    var q = el('blockquote', 'margin: 0; font-size: 15px; line-height: 1.7; color: #1E2B47; white-space: pre-line', r.rest[0]);
+    fig.appendChild(q);
+    if (r.rest[0].length > 240) {
+      var clamp = 'display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden';
+      var base = q.getAttribute('style');
+      q.setAttribute('style', base + '; ' + clamp);
+      var btn = el('button', 'align-self: flex-start; margin-top: -6px; padding: 0; font: inherit; font-size: 13px; font-weight: 600; color: #A8644A; background: none; border: 0; cursor: pointer', 'Leer más');
+      btn.type = 'button';
+      btn.setAttribute('aria-expanded', 'false');
+      btn.addEventListener('click', function () {
+        var open = btn.getAttribute('aria-expanded') === 'true';
+        q.setAttribute('style', open ? base + '; ' + clamp : base);
+        btn.textContent = open ? 'Leer más' : 'Leer menos';
+        btn.setAttribute('aria-expanded', String(!open));
+      });
+      fig.appendChild(btn);
+    }
     var cap = el('figcaption', 'display: flex; flex-direction: column; gap: 3px; border-top: 1px solid #E3DED5; padding-top: 14px');
     cap.appendChild(el('strong', 'font-size: 14px', r.name));
     if (r.rest[1]) cap.appendChild(el('span', 'font-size: 12px; color: #5A6480', r.rest[1]));
