@@ -121,6 +121,8 @@ html{scroll-behavior:smooth}
    Formato: "Nombre | Estrellas (1-5) | Enlace del perfil de Upwork | Texto de la reseña | Servicio y fecha",
    (Estrellas, enlace y servicio/fecha son opcionales.) */
 var RESENAS = [
+"Hanameel Caraballo | 5 | https://www.upwork.com/freelancers/~01c95d765f0b61b164 | Trabajar con Denisse fue una experiencia sumamente grata. Destaca por su alto nivel de profesionalismo y compromiso, por lo que la recomiendo totalmente.",
+"Tania | 5 | Mi experiencia trabajando con ella ha sido excelente. Gracias a su orientación, apoyo y profesionalismo, hoy tengo una oportunidad laboral que ha significado mucho para mí.\n\nDesde el primer momento demostró interés genuino en ayudarme, brindándome la orientación necesaria y acompañándome durante el proceso. Su compromiso, dedicación y trato humano realmente marcan la diferencia.\n\nLa recomiendo con los ojos cerrados a cualquier persona que esté buscando apoyo y nuevas oportunidades profesionales. Es una persona que trabaja con pasión, responsabilidad y un verdadero deseo de ver crecer a los demás.\n\n¡Muchísimas gracias por ayudarme a dar este paso tan importante en mi vida profesional! ¡La recomiendo al 100 %!"
 ];
 /* ====================== */
 (function () {
@@ -157,7 +159,7 @@ var RESENAS = [
       st.setAttribute('aria-label', r.rating + ' de 5 estrellas');
       fig.appendChild(st);
     }
-    fig.appendChild(el('blockquote', 'margin: 0; font-size: 15px; line-height: 1.7; color: #1E2B47', r.rest[0]));
+    fig.appendChild(el('blockquote', 'margin: 0; font-size: 15px; line-height: 1.7; color: #1E2B47; white-space: pre-line', r.rest[0]));
     var cap = el('figcaption', 'display: flex; flex-direction: column; gap: 3px; border-top: 1px solid #E3DED5; padding-top: 14px');
     cap.appendChild(el('strong', 'font-size: 14px', r.name));
     if (r.rest[1]) cap.appendChild(el('span', 'font-size: 12px; color: #5A6480', r.rest[1]));
